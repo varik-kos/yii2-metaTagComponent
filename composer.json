@@ -1,0 +1,36 @@
+{
+    "name": "varik-kos/yii2-metaTagComponent",
+    "description": "meta tag and link apple && icon",
+    "type": "yii2-component",
+    "keywords": ["yii2","component","test"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "valery kostukevich",
+            "email": "magvai75@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "varik_kos\\TML\\": ""
+        }
+    },
+	"require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+	"minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
