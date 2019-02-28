@@ -73,7 +73,8 @@ class MetaTagComponent extends Component
      * @param bool $og
      * @return $this
      */
-    public function setTitle( string $title = '', bool $og = false){
+    public function setTitle( string $title = '', bool $og = false)
+    {
         if ( !empty( $title ) ){
             $this->metaTag( self::META_TITLE, $title );
 
@@ -92,7 +93,8 @@ class MetaTagComponent extends Component
      * @param bool $og
      * @return $this
      */
-    public function setDescription( string $description = '', bool $og = false ){
+    public function setDescription( string $description = '', bool $og = false )
+    {
         if ( !empty( $description ) ){
             $this->metaTag( self::META_DESCRIPTION, $description );
             if ( !$og )
@@ -106,7 +108,8 @@ class MetaTagComponent extends Component
      * @param string $keywords
      * @return $this
      */
-    public function setKeywords( string $keywords= '' ){
+    public function setKeywords( string $keywords= '' )
+    {
         if ( !empty( $keywords ) ){
             $this->metaTag( self::META_KEYWORD, $keywords );
         }
@@ -123,7 +126,8 @@ class MetaTagComponent extends Component
      * @param string $author
      * @return $this
      */
-    public function setOgMataTag( string $url = '', string $img = '', string $name_site = '', string $author = ''){
+    public function setOgMataTag( string $url = '', string $img = '', string $name_site = '', string $author = '')
+    {
         if ( !empty( $url ) )
             $this->metaTag( self::META_URL, $url );
 
@@ -144,7 +148,8 @@ class MetaTagComponent extends Component
      * @param string $robots
      * @return $this
      */
-    public function setRobots( $robots = '' ){
+    public function setRobots( $robots = '' )
+    {
         if ( !empty( $robots ) )
             $this->metaTag(self::META_ROBOTS, $robots );
 
@@ -157,7 +162,8 @@ class MetaTagComponent extends Component
      * @param string $yandex
      * @return $this
      */
-    public function setVerifyCodesSearch( string $google = '', string $yandex = '' ){
+    public function setVerifyCodesSearch( string $google = '', string $yandex = '' )
+    {
         if ( !empty( $google ) )
             $this->metaTag(self::META_VERIFY_SEARCH_GOOGLE, $google);
 
@@ -169,7 +175,8 @@ class MetaTagComponent extends Component
 
 
 
-    private function metaTag( string $name = '', string $content = '' ){
+    private function metaTag( string $name = '', string $content = '' )
+    {
         return \Yii::$app->view->registerMetaTag( [ self::META_NAME => $name, self::META_CONTENT => $content], $name );
     }
 }

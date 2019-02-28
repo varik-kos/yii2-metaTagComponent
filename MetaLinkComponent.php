@@ -35,7 +35,8 @@ class MetaLinkComponent extends Component
      * @return $this
      */
 
-    public function getAppleTouchIcon( string $dir = '', string $name = 'apple-icon-' ){
+    public function getAppleTouchIcon( string $dir = '', string $name = 'apple-icon-' )
+    {
         if ( !empty( $dir ) ){
 
             foreach ( self::APPLE_ICON_SIZE as $size ){
@@ -54,7 +55,8 @@ class MetaLinkComponent extends Component
     /**
      * @param string $dir
      */
-    public function getSiteIcon( string $dir = '', string $name = 'favicon-' ){
+    public function getSiteIcon( string $dir = '', string $name = 'favicon-' )
+    {
         if ( !empty( $dir ) ){
             foreach ( self::SITE_ICONS as $size){
                 \Yii::$app->view->registerLinkTag(
