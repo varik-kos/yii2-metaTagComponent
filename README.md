@@ -7,3 +7,4 @@ meta tag and link icon
 
 #### **PHP 7**
 
+composer require varik-kos/yii2-meta-tag-component
